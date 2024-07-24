@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="my_pic.jpg" alt="Your profile picture" class="profile">
+            <h1> Sathish Madanu</h1>
+            <p>I'm a Web Developer.</p>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#resume">RESUME</a></li>
+            <li><a href="#contacts">CONTACT</a></li>
+            
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me:</h2>
+            <p>Hi, I'm Sathish Madanu, a B.Tech student at SRM University AP. I’m passionate about gaining new skills and aim to become a proficient in my field.
+               I'm a self-motivated, hard-working and enthusiastic person who is always ready to learn new things.In my free time, I enjoy listening to music, 
+               playing cricket, and browsing the internet. I love exploring new skills and am always eager to learn and grow.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education:</h2>
+            <center>
+            <table border="1" cellpadding="5" cellspacing="5">
+                <tr>
+                    <th>SNo.</th>
+                    <th>Institute Name</th>
+                    <th>Place</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>SRM UNIVERSITY</td>
+                    <td>Amaravathi, AP</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>SRI CHAITANYA JR COLLEGE</td>
+                    <td>Narasaraopet, AP</td>
+                    <td>2020 - 2022</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>ST. ANN'S CENTENARY EM HIGH SCHOOL</td>
+                    <td>Phirangipuram, AP</td>
+                    <td>2015 - 2020</td>
+                </tr>
+            </table>
+            </center>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills:</h2>
+            <ul type="disc">
+                <li>Programming Languages</li><br>
+                <ol type="1">
+                    <li>C, C++, Python , SQL.</li><br>
+                    <li>HTML, CSS, JavaScript, PHP.</li>
+                </ol><br>
+                <li>Data Structures and Algorithms, OOPS with C++.</li><br>
+                <li>Design and Analysis of Algorithms.</li><br>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects:</h2>
+                <div class="work-container">
+
+
+                   <div class="work-info">
+                           <h4>Library Management System </h1>
+                            <p>
+                                The Library Management System is a C language-based software designed to efficiently manage library operations, including book cataloging, member registration, and transaction handling. It streamlines processes, ensuring accurate inventory control and easy access to library resources. <br>
+                                Skillset :  DS in C.
+                            </p>
+                   </div>
+                  
+                   
+           
+                       <div class="work-info">
+                           <h4>Dictionary Management System</h1>
+                               <p>
+                                The Dictionary Management System is a C++ project utilizing Object-Oriented Programming (OOP) principles to manage and manipulate a collection of words and their definitions. It offers functionalities such as adding, searching, updating, and deleting entries, providing an efficient and organized way to handle dictionary data. <br>
+                                   Skillset: Using OOPS in C++.
+                               </p>
+                           </div>
+                       
+                    
+           
+                   <div class="work-info">
+                           <h4>Hostel Management system </h1>
+                            <p>
+                                The Hostel Management System uses MySQL for database management, HTML for the user interface, and PHP for server-side scripting, providing a seamless platform for managing student records, room allocations, and fee processing.<br>
+                               Skillset: MY SQL, HTML , CSS , JAVA SCRIPT and PHP. 
+                            </p>
+                       </div>
+                   </div>
+               
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <h2>Resume:</h2>
+            <p>Have a look! at my Resume.<br><br>
+                Just Click on 'Download Resume' button to Download my Resume.
+            </p>
+            <center>
+                <a href="MY_RESUME.pdf" class="download-button" target="_blank">Download Resume</a>
+            </center>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="section-content">
+            <h2>Contact:</h2>
+    <div class="social-media">
+        <ul type="none">
+        <li><a href="https://www.linkedin.com/in/sathishmadanu/" target="_blank" ><i class='bx bxl-linkedin-square' ></i></a>Linkedin</li>
+        <li><a href="https://www.instagram.com/madanusathish/" target="_blank"><i class='bx bxl-instagram' target="_blank"></i></a>Instagram</li>
+        <li><a href= "#"><i class='bx-fw bx bxl-facebook' ></i></a>Facebook</li>
+        <li><a href="#"><i class='bx bxl-github' ></i></a>Github</li>
+        </ul>
+    </div>
+    </div>
+</section>
+
+    <footer>
+        <marquee><p>&copy; 2024 Thanks for visiting my portfolio - Have a Great Day.</p></marquee>
+    </footer>
+
+    <button class="top-button" id="top-button">Top</button>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        const topButton = document.getElementById('top-button');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                topButton.style.display = 'block';
+            } else {
+                topButton.style.display = 'none';
+            }
+        });
+
+        topButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
